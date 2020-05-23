@@ -13,7 +13,7 @@ class App extends React.Component{
     componentDidMount() {
         debugger;
         axios.get("http://localhost:8080/weather/aboveFixedTemp").then(res => {
-            // console.log(res);
+            
             this.setState({
                 items: res.data
             })
